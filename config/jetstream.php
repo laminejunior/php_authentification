@@ -2,6 +2,7 @@
 
 use Laravel\Jetstream\Features;
 use Laravel\Jetstream\Http\Middleware\AuthenticateSession;
+use League\CommonMark\Node\Block\Document;
 
 return [
 
@@ -60,7 +61,7 @@ return [
     'features' => [
         // Features::termsAndPrivacyPolicy(),
          Features::profilePhotos(),
-        // Features::api(),
+         Features::api(),
         // Features::teams(['invitations' => true]),
         Features::accountDeletion(),
     ],
